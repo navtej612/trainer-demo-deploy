@@ -11,7 +11,7 @@ def validate_templates_json() -> str:
     """
     Validate templates.json entries for required metadata fields.
     """
-    templates_path = REPO_ROOT / "templates.json"
+    templates_path = REPO_ROOT / "static" / "templates.json"
 
     if not templates_path.exists():
         return f"templates.json not found at: {templates_path}"
